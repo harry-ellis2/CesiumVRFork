@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cesium-vr Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <style>
+      body, html {
+          height: 100%;
+      }
+
+      body {
+          padding: 0;
+          border: 0;
+          margin: 0;
+          overflow: hidden;
+      }
+
+      #button-container {
+          position: fixed;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+      }
+    </style>
+    <script type="importmap">
+      {
+	  "imports": {
+//	      "CesiumJS": "./lib/cesium/Build/CesiumUnminified/index.js",
+	      "CesiumJS": "./lib/cesium/Build/Cesium/index.js",
+	      "WebXR-Button": "./lib/webxr-samples/util/webxr-button.js"
+	  }
+      }
+    </script>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <div id="button-container"></div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+*.swp
+*.DS_STORE
+.idea
+bin/
+/htdocs/var.js
+/star.pem
+/cert.pem
+/key.pem
+/star.key
+/node_modules/
